@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
             for (; col < colLimit; col += 2)
             {
                 Tile t = Instantiate(tile, new Vector3(col, 0, row * colsRange), Quaternion.identity);
-                tiles[col, row] = t.Init(col, row);
+                //tiles[col, row] = t.Init(col, row);
                 t.gameObject.SetActive(true);
             }
 
